@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/felipelube/release-please-playground/compare/v1.0.0...v1.0.1) (2024-01-30)
+
+
+### Bug Fixes
+
+* remove test ([60f10f1](https://github.com/felipelube/release-please-playground/commit/60f10f190a0cc291577f7cd9ab41fb7d86e4cf02))
+
 ## 1.0.0 (2024-01-30)
 
 
