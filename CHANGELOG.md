@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/felipelube/release-please-playground/compare/v1.0.1...v1.1.0) (2024-01-30)
+
+
+### Features
+
+* test ([d3bdf7b](https://github.com/felipelube/release-please-playground/commit/d3bdf7bd4fbadf5dedd81961c3501fa08fbb03ba))
+
 ## [1.0.1](https://github.com/felipelube/release-please-playground/compare/v1.0.0...v1.0.1) (2024-01-30)
 
 
