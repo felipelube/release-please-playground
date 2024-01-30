@@ -36,7 +36,7 @@ jobs:
         with:
           script: |
             github.rest.issues.createComment({
-              issue_number: ${{ github.event.number }}
+              issue_number: ${{ github.event.number }},
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: "Deployed at ${{env.DEPLOYMENT_URL}}"
