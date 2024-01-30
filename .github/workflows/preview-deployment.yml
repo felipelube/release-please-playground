@@ -25,23 +25,3 @@ jobs:
         run: |
           vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} >deployment-url.txt
           echo "deploymentUrl=$(cat deployment-url.txt)" >> $GITHUB_ENV
-  Add-Comment:
-    runs-on: ubuntu-latest
-    needs: Deploy-Preview
-    permissions:
-      issues: write
-      pull-requests: write
-    steps:
-      - name: Comment URL to PR
-        env:
-          DEPLOYMENT_URL: ${{needs.Deploy-Preview.outputs.deploymentUrl}}
-          PR_NUMBER: ${{needs.Deploy-Preview.outputs.prNumber}}
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: ${{ env.PR_NUMBER }}
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: "Deployed at ${{env.DEPLOYMENT_URL}}"
-            })
