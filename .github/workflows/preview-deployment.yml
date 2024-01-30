@@ -24,7 +24,6 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         run: |
           vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} >deployment-url.txt
-          echo "prNumber=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')" >> $GITHUB_ENV
           echo "deploymentUrl=$(cat deployment-url.txt)" >> $GITHUB_ENV
   Add-Comment:
     runs-on: ubuntu-latest
