@@ -1,4 +1,5 @@
 import Image from 'next/image'
+const b = 'a'
 
 export default function Home() {
   return (
