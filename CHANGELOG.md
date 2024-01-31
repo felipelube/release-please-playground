@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/felipelube/release-please-playground/compare/v1.1.0...v1.2.0) (2024-01-31)
+
+
+### Features
+
+* Update layout.tsx ([f55afe7](https://github.com/felipelube/release-please-playground/commit/f55afe7f8dabbbc5466f1fac5585eca7e396eb1c))
+
 ## [1.1.0](https://github.com/felipelube/release-please-playground/compare/v1.0.1...v1.1.0) (2024-01-30)
 
 
